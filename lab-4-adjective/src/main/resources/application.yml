@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: lab-4-adjective
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+words: “reasonable,leaky,suspicious,ordinary,unlikely”
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8010/eureka/
